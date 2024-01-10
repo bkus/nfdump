@@ -29,6 +29,6 @@
     
     # nfexpire -u /var/log/netflow/* -t 8w
     # exit
-    $ echo 'alias nfd="nfdump -r /var/log/[your favorite netflow source dir]' >> ~/.bashrc
+    $ echo 'alias nfd="nfdump -r /var/log/[your favorite netflow source dir]"' >> ~/.bashrc
     $ . ~/.bashrc
     $ nfd | less

@@ -1,0 +1,15 @@
+[Unit]
+Description=NetFlow Logging Service
+Documentation=man:nfcapd(1)
+Documentation=https://github.com/phaag/nfdump
+
+[Service]
+EnvironmentFile=-/etc/sysconfig/netflow
+User=nobody
+Group=nobody
+ExecStart=/usr/bin/nfcapd $NFCAPD_OPTIONS
+Restart=on-failure
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

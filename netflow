@@ -1,0 +1,1 @@
+NFCAPD_OPTIONS="-S 2 -M /var/log/netflow -p 2055 -z=lz4 -e"
